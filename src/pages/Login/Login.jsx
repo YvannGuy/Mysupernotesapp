@@ -18,7 +18,17 @@ const handlelogin = async (e) => {
     return;
   }
 
-}
+
+  if (!password) {
+    setError("Please enter the password")
+    return;
+  }
+  
+  setError("")
+
+  //Login API call
+
+};
 
   return (
     <>
